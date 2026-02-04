@@ -9,52 +9,61 @@
         
         body {
             font-family: 'Prompt', sans-serif;
-            background-color: #ffeef2;
+            /* พื้นหลังสีฟ้าพาสเทลไล่ไปม่วงอ่อน */
+            background: linear-gradient(135deg, #E0F2FE 0%, #F5F3FF 100%);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            color: #555;
+            color: #5F6368;
         }
+
         .container {
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             padding: 2.5rem 1.5rem;
-            border-radius: 25px;
-            box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
+            border-radius: 30px;
+            /* เงาสีม่วงอ่อนจางๆ */
+            box-shadow: 0 10px 30px rgba(167, 139, 250, 0.2);
             text-align: center;
             width: 85%;
             max-width: 400px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
+
         .hidden { display: none; }
         
         input {
             padding: 12px;
             width: 80%;
-            border: 2px solid #ffb6c1;
-            border-radius: 12px;
+            /* ขอบสีม่วงพาสเทล */
+            border: 2px solid #DDD6FE;
+            border-radius: 15px;
             margin-bottom: 15px;
             text-align: center;
             font-size: 16px;
             outline: none;
+            background-color: #F9FAFB;
         }
         
         button {
-            background-color: #ffb6c1;
+            /* ปุ่มสีม่วงพาสเทล (Lavender Blue) */
+            background-color: #A5B4FC;
             color: white;
             border: none;
-            padding: 12px 25px;
+            padding: 12px 30px;
             border-radius: 50px;
             cursor: pointer;
             font-size: 16px;
             font-weight: 500;
-            transition: 0.3s;
-            box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+            transition: 0.4s;
+            box-shadow: 0 4px 15px rgba(165, 180, 252, 0.4);
         }
 
         button:hover { 
-            background-color: #ff8da1;
-            transform: translateY(-2px);
+            /* เมื่อวางเมาส์จะเปลี่ยนเป็นสีฟ้าพาสเทล */
+            background-color: #93C5FD;
+            transform: scale(1.05);
         }
 
         .video-container {
@@ -62,10 +71,11 @@
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            border-radius: 15px;
+            border-radius: 20px;
             margin: 20px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 3px solid #F3F4F6;
         }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -77,13 +87,19 @@
         .message {
             line-height: 1.8;
             white-space: pre-wrap;
-            color: #d63384;
+            /* ข้อความสีม่วงเข้มแบบพาสเทล */
+            color: #7C3AED;
             font-size: 15px;
             text-align: left;
         }
 
-        h2 { color: #ff8da1; margin-top: 0; }
-        p.hint { font-size: 14px; color: #aaa; }
+        h2 { 
+            color: #6366F1; 
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+
+        p.hint { font-size: 13px; color: #9CA3AF; }
     </style>
 </head>
 <body>
